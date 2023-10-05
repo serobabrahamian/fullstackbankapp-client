@@ -42,7 +42,7 @@ function WithdrawForm(props) {
 
   async function handle() {
     console.log(email, amount);
-    const userUpdateUrl = `/account/update/${email}/-${amount}`;
+    const userUpdateUrl = `https://serobabrahamfullstackbankapp-096547d76ef1.herokuapp.com/account/update/${email}/-${amount}`;
     try {
       const res = await fetch(userUpdateUrl);
       const data = await res.json();
